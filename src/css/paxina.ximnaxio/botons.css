@@ -1,0 +1,19 @@
+button[name="join"] {
+  border: var(--estilo-boton-join-border);
+  background-color: var(--estilo-boton-join-background-color);
+  color: var(--estilo-boton-join-cor);
+
+  padding: 1vw;
+  width: fit-content;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+span[name="boton"] {
+  background-color: #ff0000;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.2vw;
+  margin: 1vw;
+}

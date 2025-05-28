@@ -1,0 +1,79 @@
+blockquote {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  text-align: center;
+}
+.distribucion-seccion-jhony {
+  display: grid;
+  grid-template-rows: 3fr 1fr 5fr;
+  grid-template-columns: 1fr 6fr 1fr;
+  height: inherit;
+  justify-items: center;
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+}
+
+.jhony {
+  text-transform: uppercase;
+  font-size: 5vw;
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+.fotos-jhony {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  display: grid;
+  justify-items: center;
+}
+.span-boton {
+  background-color: #838383;
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+.span-boton:hover {
+  background-color: #ff0000;
+}
+.elementos-boton {
+  display: flex;
+}
+.titulo-nome {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.5vw;
+}
+.frecha-esq {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  cursor: pointer;
+}
+.frecha-drcha {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  cursor: pointer;
+}
+#enlace-4 {
+  --color-test: white;
+  position: relative;
+  background-image: url("../../imaxenes/fondo_xente_gimn_svg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-test);
+  font-family: var(--estilo-tipo-letra-segoe);
+  background-attachment: fixed;
+  height: 110vh;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 110vh;
+    left: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario de Logueo</title>
+  <!-- Puedes enlazar aquí tu CSS -->
+  <!-- <link rel="stylesheet" href="./css/main.css" /> -->
+</head>
+<body>
+  <form id="form-logueo">
+    <input name="nome2" type="text" placeholder="Introduce o teu nome" required />
+    <input name="apelido2" type="text" placeholder="Introduce o teu apelido" required />
+    <button type="submit" id="envio2">Enviar</button>
+  </form>
+
+  <script>
+    document.getElementById("form-logueo").addEventListener("submit", async (event) => {
+      event.preventDefault(); // Evita recargar la página al enviar
+
+      const form = event.target;
+      const datos = {
+        nome2: form.nome2.value.trim(),
+        apelido2: form.apelido2.value.trim()
+      };
+
+      try {
+        const respuesta = await fetch("/paxina-app", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(datos)
+        });
+
+        if (!respuesta.ok) {
+          throw new Error(`Error en la respuesta: ${respuesta.statusText}`);
+        }
+
+        const resultado = await respuesta.json();
+        console.log("Respuesta del servidor:", resultado);
+        alert("Formulario enviado correctamente.");
+        form.reset();
+      } catch (error) {
+        console.error("Error enviando datos:", error);
+        alert("Hubo un error enviando el formulario.");
+      }
+    });
+  </script>
+</body>
+</html>

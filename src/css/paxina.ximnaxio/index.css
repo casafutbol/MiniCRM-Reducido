@@ -1,0 +1,179 @@
+@import url("./variables.css");
+@import url("./seccion.primeira.css");
+@import url("./seccion.segunda.css");
+@import url("./seccion.terceira.css");
+@import url("./seccion.cuarta.css");
+@import url("./botons.css");
+@import url("./footer.css");
+@import url("./menu.css");
+@import url("./elementos.imaxes.posicion.css");
+@import url("./estilo.etiquetas.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--cor-fondo);
+  color: var(--cor-test);
+  font-family: var(--estilo-tipo-letra-sistema);
+  /* font-weight: var(--estilo-weight-tipo-letra); */
+}
+.maiusculas {
+  text-transform: uppercase;
+}
+scroll-page {
+  /* height: var(--altura-seccion); */
+  /* border: 1px solid var(--cor-test); */
+  display: block;
+  margin: 10px;
+}
+scroll-container {
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  /* border: 1px solid red; */
+
+  height: 1500px;
+  /* height: fit-content; */
+  display: block;
+}
+/* span {
+  font-size: 20px;
+} */
+:is(.texto-branco, .cor-enfasis-letra) {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+header {
+  /* border: 1px solid var(--cor-test); */
+  /* position: absolute; */
+  width: 100%;
+  /* div {
+    background-color: var(--cor-test-fondo);
+    height: var(--altura-test-boton);
+    width: var(--anchura-test-icono);
+  } */
+  .letras-marca-header {
+    text-transform: uppercase;
+    font-family: var(--estilo-tipo-letra-segoe);
+    font-size: var(--estilo-importante-size-font);
+    align-items: center;
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--cor-test);
+    font-size: 21px;
+  }
+}
+
+.distribucion-flex-centrado {
+  display: flex;
+  justify-content: var(--distribucion-test-header);
+  align-items: var(--alineacion-test-header);
+}
+.en-columna {
+  flex-direction: column;
+}
+/*
+
+## OPCIÓN PARA TAMAÑO ESPECÍFICO ##*/
+/*.wrapper-header-section {
+  /* background-image: url("./fondoBueno.png"); */
+/* background-repeat: no-repeat; */
+/*}*/
+
+.wrapper-header-section {
+  position: relative;
+  height: 5vw;
+}
+.galeria {
+  display: flex;
+  width: 600px; /* ancho de 'wrapper-imaxenes' */
+  /* border: 5px solid green; */
+  overflow-y: hidden; /* propiedade que fai que non se vexan o resto das imaxes */
+  overflow-x: hidden;
+}
+.wrapper-imaxenes {
+  width: 600px;
+}
+.posicion-imaxen-fondo {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.posicion-chico-sentado {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav.galeria-imaxes {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 120px;
+}
+#enlace-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+}
+.boton-ir-arriba {
+  position: fixed;
+  bottom: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border: 1px solid white;
+  font-size: 20px;
+}
+
+.wrapper-a-imaxen {
+  width: 120px;
+}
+
+.contain {
+  object-fit: contain;
+  width: 600px;
+}
+.div-traballo-articles-principal-secction {
+  display: flex;
+  background: var(--estilo-gradiante-imaxen-home-ximnaxio);
+  height: 100vw;
+}
+/* 
+section {
+  display: flex;
+
+  height: var(--altura-seccion);
+} */
+/* ELEMENTO FILLO */
+
+article {
+  flex: 1; /* propiedade de flex que está relacionado ca lonxitude */
+  /* height: 800px; */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  &:focus {
+    color: red;
+  }
+  &:hover {
+    color: red;
+  }
+}

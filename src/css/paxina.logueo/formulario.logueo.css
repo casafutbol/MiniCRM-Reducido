@@ -1,0 +1,20 @@
+
+
+form[name="formulario-logueo"]{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid red;
+    width: 50%;
+    padding: 3%;
+    input[name="nome2"],input[name="apelido2"]{
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 10px;
+    }
+    
+}
+button[name="logueo"]{
+    padding: 10px;
+    font-size: 25px;
+}

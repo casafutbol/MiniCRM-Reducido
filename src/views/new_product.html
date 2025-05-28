@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/paxina.new_product/index.css">
+</head>
+<body id="body-sa">
+    <div id="contenedor-sa">
+        <!-- Div Superior -->
+        <div id="divSuperior-sa">
+            <span>Div Superior</span>
+            <div class="circuloUsuarioI-sa"></div>
+            <div class="circuloUsuarioD-sa"></div>
+        </div>
+
+        <!-- Div Superior Izquierdo (Contiene círculo izquierdo) -->
+        <div id="divCirculo-sa"></div>
+
+        <!-- Div Lateral Izquierdo con imágenes -->
+        <div id="divLateralIzquierdo-sa">
+            <div><img src="../imaxenes/home/1-sa.png" alt="Men 1"></div>
+            <div><img src="../imaxenes/home/2-sa.png" alt="Men 2"></div>
+            <div><img src="../imaxenes/home/3-sa.png" alt="Men 3"></div>
+            <div><img src="../imaxenes/home/4-sa.png" alt="Men 4"></div>
+        </div>
+
+        <!-- Contenedor de búsqueda -->
+        <div class="contenedorSearch-sa">Settings Products</div>
+
+        <!-- Div Inferior Derecho -->
+        <div id="divInferiorDerecho-sa">
+            <h2 class="titulo-sa">Products</h2>
+
+            <!-- Formulario de Productos -->
+            <form id="formularioProductos-sa">
+                <div class="form-group-sa">
+                    <label class="etiqueta" for="name">Nombre:</label>
+                    <input type="text" id="name-sa" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="etiqueta"  for="codigo">Código:</label>
+                    <input type="text" id="codigo-sa" name="codigo" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="etiqueta"  for="stock">Stock:</label>
+                    <input type="number" id="stock-sa" name="stock" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="etiqueta"  for="tipo">Tipo:</label>
+                    <input type="text" id="tipo-sa" name="tipo" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="etiqueta"  for="peso">Peso:</label>
+                    <input type="text" id="peso-sa" name="peso" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="etiqueta"  for="precio">Precio:</label>
+                    <input type="text" id="precio-sa" name="precio" required>
+                </div>
+            </form>
+
+            <!-- Imagen del producto -->
+            <div id="product_1-sa">
+                <img src="../imaxenes/new_product/product_1-sa.svg" alt="Product Image">
+            </div>
+
+            <!-- Botonera -->
+            <div id="botonera-sa">
+                <button id="boton1-sa">Change picture</button>
+                <button id="boton2-sa">Delete picture</button>
+            </div>
+
+            <!-- Engranaje -->
+            <div class="tresEngranajes-sa">
+                <img src="../imaxenes/new_product/product_2-sa.svg" alt="Engranaje" class="engranaje">
+            </div>
+
+            <!-- Botón de envío -->
+            <button type="button" class="botonSend-sa">Send</button>
+        </div>
+    </div>
+</body>
+</html>

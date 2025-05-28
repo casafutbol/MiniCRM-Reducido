@@ -1,0 +1,250 @@
+/* Centrar el contenedor en el navegador */
+#body-sa {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Usamos Flexbox para centrar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupa toda la altura del navegador */
+    background-color: #e0e0e0; /* Color de fondo del body */
+}
+
+#contenedor-sa {
+    width: 1366px;
+    height: 879px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+/* Div superior */
+#divSuperior-sa {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Div lateral izquierdo */
+#divLateralIzquierdo-sa {
+    width: 60px;
+    height: calc(100% - 70px);
+    background-color: #2196F3;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* Div inferior derecho */
+#divInferiorDerecho-sa {
+    position: relative;
+    width: calc(100% - 60px);
+    height: calc(100% - 70px);
+    background-color: #f9faff;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 242px);
+    grid-template-rows: repeat(2, 220px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+/* Divs dentro de divInferiorDerecho */
+#divInferiorDerecho-sa > div.six-buttons-sa{
+    width: 242px;
+    height: 220px;
+    background-color: #FFF;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+/* 
+   - Añade una sombra al elemento.
+   - La sombra se desplaza 2 píxeles hacia la derecha (horizontal) y 2 píxeles hacia abajo (vertical).
+   - Tiene un desenfoque de 5 píxeles, lo que le da un aspecto suave.
+   - El color de la sombra es negro (`rgba(0, 0, 0)`), con un 30% de opacidad (`0.3`).
+*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+
+
+/*Configuracón del contenido de divLateralIzquierdo*****************************************************************************************/
+
+#divLateralIzquierdo-sa > div {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    color: #000;
+
+}
+
+
+#divLateralIzquierdo-sa {
+    display: flex; /* Usar flexbox para el contenedor */
+    flex-direction: column; /* Colocar los divs uno debajo del otro */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el div */
+}
+
+#divLateralIzquierdo-sa div {
+    display: flex; /* Usar flexbox para cada div */
+    flex-direction: column; /* Colocar la imagen y el texto en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    /*margin: 10px; /* Espaciado entre divs */
+}
+
+#divLateralIzquierdo-sa img {
+    max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del div */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+
+.paraHome-sa {
+    position: absolute; /* Para usar top y left */
+    width: 78px;
+    height: 36px;
+    top: 32px;
+    left: 77px;
+    font-family: 'Mulish', sans-serif; /* Asegúrate de que la fuente esté disponible */
+    font-weight: 600; /* Peso de la fuente */
+    font-size: 28px; /* Tamaño de la fuente */
+    line-height: 35.14px; /* Altura de la línea */
+    text-align: left; /* Centra el texto horizontalmente */
+    color: black; /* Color del texto */
+}
+
+.contenedorSearch-sa {
+    position: absolute; /* Para usar top y left */
+    width: 214px;
+    height: 30px;
+    top: 20px;
+    left: 77px;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color: white;
+
+    
+}
+
+
+#busqueda{
+    width:174px ;
+    height:20px ;
+    position: absolute; /* Para usar top y left */
+    font-family: 'Mulish', sans-serif; /* Asegúrate de que la fuente esté disponible */
+    font-weight: 400; /* Peso de la fuente */
+    font-size: 14px; /* Tamaño de la fuente */
+    line-height: 17.57px; /* Altura de la línea */
+    text-align: left; /* Centra el texto horizontalmente */
+    color: #A0BCE4; /* Color del texto */
+    top:2px;
+    left:30px;
+}
+
+#lupa-sa{
+    width: 27px;
+    height:29px;
+    background-color: white;
+    border-radius: 5px;
+    /*border:1px solid #ff5722;*/
+    
+    }
+
+.contenedorSearch-sa #lupa-sa img {
+    position: absolute;
+    top:2px;
+    left:2px;
+    width: 26px;  /* Cambia el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+ 
+#divCirculo-sa {
+    width:60px ;
+    height: 70px;
+    background-color: #2196F3;
+    
+    position:absolute;
+    top:0px;
+    left:0px;
+    }
+
+.circuloUsuarioD-sa{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; /* Hace que el div tenga forma de círculo */
+    background-color: rgba(255, 255, 255, 0.5); /* Color del círculo */
+    border:1px solid red;
+    /*display: block; /* Asegúrate de que se muestre */
+    position:absolute;
+    top: 11px;
+    left: 1298px;
+
+}
+
+
+.circuloUsuarioI-sa{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; /* Hace que el div tenga forma de círculo */
+    background-color: rgba(255, 255, 255, 0.5); /* Color del círculo */
+    border:1px solid red;
+    /*display: block; /* Asegúrate de que se muestre */
+    position:absolute;
+    top: 13px;
+    left: 8px;
+
+}
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Tablets y laptops medianos (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #contenedor-sa {
+        width: 100%;
+        height: auto;
+    }
+
+    #divInferiorDerecho-sa {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-rows: auto; /* Ajustar altura automáticamente */
+        gap: 20px;
+    }
+
+    #divInferiorDerecho-sa > div {
+        width: 90%; /* Ajustar ancho para pantallas pequeñas */
+        height: auto; /* Mantener proporciones */
+    }
+}
+
+/* Smartphones (< 768px) */
+@media (max-width: 768px) {
+    #divLateralIzquierdo-sa {
+        display: none; /* Ocultar el lateral izquierdo en pantallas pequeñas */
+    }
+
+    #divInferiorDerecho-sa {
+        justify-content: center;
+        align-content: center;
+    }
+}
+

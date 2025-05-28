@@ -1,0 +1,14 @@
+.menu {
+  flex: 0.7;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* .letras-marca-header {
+  height: 15px;
+  text-transform: uppercase;
+  font-family: var(--estilo-tipo-letra-segoe);
+  font-size: var(--estilo-weight-tipo-letra);
+} */

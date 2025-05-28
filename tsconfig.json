@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "NodeNext",
+    "target": "ES2022",
+    "moduleResolution":"nodenext"
+  },
+  "typedocOptions": {
+    "entryPoints": [
+      "src/**/*.ts" // <--- take everything from this location
+    ],
+    "out": "docsFRONT/" // <--- output directory
+  }
+}

@@ -1,0 +1,500 @@
+:root {
+    --altura-linea: 50px; /* Define la variable */
+}
+
+
+
+/* Centrar el contenedor en el navegador */
+#body-sa {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Usamos Flexbox para centrar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupa toda la altura del navegador */
+    background-color: #e0e0e0; /* Color de fondo del body */
+}
+
+#contenedor-sa {
+    width: 1366px;
+    height: 879px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+/* Div superior */
+#divSuperior-sa {
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Div lateral izquierdo */
+#divLateralIzquierdo-sa {
+    width: 60px;
+    height: calc(100% - 70px);
+    background-color: #2196F3;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el div */
+}
+
+/* Div inferior derecho */
+#divInferiorDerecho-sa {
+   
+    width: calc(100% - 60px);
+    height: calc(100% - 70px);
+    background-color: #F9FAFF;
+    
+    position: absolute;
+    top: 70px;
+    left: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 242px);
+    grid-template-rows: repeat(2, 220px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+
+
+
+
+
+/*Configuracón del contenido de divLateralIzquierdo*****************************************************************************************/
+
+#divLateralIzquierdo-sa > div {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    color: #000;
+
+}
+
+
+#divLateralIzquierdo-sa {
+    display: flex; /* Usar flexbox para el contenedor */
+    flex-direction: column; /* Colocar los divs uno debajo del otro */
+}
+
+#divLateralIzquierdo-sa div {
+    display: flex; /* Usar flexbox para cada div */
+    flex-direction: column; /* Colocar la imagen y el texto en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    /*margin: 10px; /* Espaciado entre divs */
+}
+
+#divLateralIzquierdo-sa img {
+    max-width: 100%; /* Asegurarse de que la imagen no exceda el ancho del div */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+
+
+
+.contenedorSearch-sa {
+    
+    width: 214px;
+    
+    height: var(--altura-linea); /* Usando la variable */
+    line-height: var(--altura-linea); /* Usando la misma variable */
+    
+    position: absolute; /* Para usar top y left */
+    top: 20px;
+    left: 77px;
+    border:1px solid rgb(38, 0, 255);
+    border-radius: 5px;
+    background-color: white;
+    color:black;
+    font-weight: 600;
+    font-size: 22px;
+        
+}
+
+
+.product-sa{
+    width: 608px;
+    height: 644px;
+    background-color: #FFFFFF;
+    position:absolute;
+    top: 144px;
+    left:146px;
+    
+}
+
+#product_1-sa{
+    width: 150;
+    height: 150;
+    
+    position: absolute;
+    top:209px;
+    left:243px;
+}
+
+/*Configurando la botonera*/
+#botonera-sa {
+    width: 171px;
+    height: 109px;
+    background-color: #FFFFFF;
+    
+    position: absolute;
+    top: 219px;
+    left: 496px;
+}
+
+#boton1-sa, #boton2-sa {
+    background-color: #FFFFFF;/* Background color */
+    cursor: pointer;/* Pointer on hover */
+    width: 171px; /* Width fixed */
+    height: 35.67px; /* Height fixed */
+    border-radius: 10px; /* Radius */
+    border: 1px solid #A4A4CB;  /* Border */
+      
+}
+
+
+#boton1-sa{
+    position:absolute;
+    top: 0px; /* Botón en la parte superior */
+    /*width:;
+    height:;*/
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+#boton2-sa {
+    position:absolute;
+    bottom: 0px; /* Botón en la parte inferior */
+
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+#textoboton1-sa{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    width: 111px;
+    height:21px ;
+   
+
+}
+
+
+
+#textoboton2-sa{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    width: 99px;
+    height:21px ;
+    }
+
+
+
+
+/* Efecto hover */
+#boton1-sa:hover, #boton2-sa:hover {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Letras blancas */
+}
+
+
+.botonSend-sa {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color:white;
+    width: 260px;
+    height: 65px;
+    position:absolute;
+    top: 648px;
+    left: 990px;
+    border-radius: 12px; /* Para bordes redondeados */
+    background-color: #4C8DEB;
+  }
+  .botonSend-sa:hover {
+    cursor:pointer;
+    background-color: #45a049;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+    }
+
+
+    
+
+   
+
+
+
+
+
+
+ 
+
+
+
+#divCirculo-sa {
+    width:60px ;
+    height: 70px;
+    background-color: #2196F3;
+    
+    position:absolute;
+    top:0px;
+    left:0px;
+    }
+
+    .circuloUsuarioD-sa{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%; /* Hace que el div tenga forma de círculo */
+        background-color: rgba(255, 255, 255, 0.5); /* Color del círculo */
+        border:1px solid red;
+        /*display: block; /* Asegúrate de que se muestre */
+        position:absolute;
+        top: 11px;
+        left: 1298px;
+       
+        }
+
+.circuloUsuarioI-sa{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; /* Hace que el div tenga forma de círculo */
+    background-color: rgba(255, 255, 255, 0.5); /* Color del círculo */
+    border:1px solid red;  
+    /*display: block; /* Asegúrate de que se muestre */
+    position:absolute;
+    top: 13px;
+    left: 8px;
+    z-index: 1;
+            }
+
+
+
+
+/*Configuracion del título del formulario*/
+
+.titulo-sa {
+    position: absolute; /* Permite posicionarlo en relación al contenedor */
+    top: 170px; /* Ubicación en la parte superior */
+    left: 193px; /* Alineación a la izquierda */
+    
+    width: 111px;
+    height: 25px;
+      
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 10px; /* Un poco de relleno para que no esté pegado al borde */
+    font-size: 24px; /* Tamaño de fuente, ajusta según desees */
+    color: #000; /* Color del texto */
+}
+
+
+
+.etiqueta[for="name"] {
+    width: 111px;
+    height: 25px;
+    position: absolute; /* o relative, fixed, sticky */
+    top: 400px;
+    left: 193px;
+ }
+
+
+#name-sa{
+    width: 97px;
+    height: 33px;
+    position:absolute;
+    top:425px;
+    left:194px;
+    border:1px solid #4c8deb;
+    opacity: 0.1865;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    
+
+}
+
+
+.etiqueta[for="codigo"] {
+    width: 111px;
+    height: 25px;
+    position: absolute; /* o relative, fixed, sticky */
+    top: 400px;
+    left: 339px;
+ }
+
+
+#codigo-sa{
+    width: 343px;
+    height: 33px;
+    position:absolute;
+    top:425px;
+    left:339px;
+    border:1px;
+    border-radius: 3px;
+    border:1px solid #4c8deb;
+    opacity: 0.1865;
+}
+
+.etiqueta[for="stock"] {
+    width: 111px;
+    height: 25px;
+    position: absolute; /* o relative, fixed, sticky */
+    top: 485px;
+    left: 194px;
+ }
+
+ 
+
+#stock-sa{
+    width: 343px;
+    height: 33px;
+    position:absolute;
+    top:509px;
+    left:193px;
+    border:1px;
+    border-radius: 3px;
+    border:1px solid #4c8deb;
+    opacity: 0.1865;
+}
+
+
+.etiqueta[for="tipo"] {
+    width: 111px;
+    height: 25px;
+    position: absolute; /* o relative, fixed, sticky */
+    top: 555px;
+    left: 194px;
+ }
+
+
+#tipo-sa{
+    width: 343px;
+    height: 33px;
+    position:absolute;
+    top:582px;
+    left:193px;
+    border:1px;
+    border-radius: 3px;
+    border:1px solid #4c8deb;
+    opacity: 0.1865;
+}
+
+.etiqueta[for="peso"] {
+    width: 111px;
+    height: 25px;
+    position: absolute; /* o relative, fixed, sticky */
+    top: 622px;
+    left: 194px;
+ }
+
+
+#peso-sa{
+    width: 343px;
+    height: 33px;
+    position:absolute;
+    top:652px;
+    left:193px;
+    border:1px;
+    border-radius: 3px;
+    border:1px solid #4c8deb;
+    opacity: 0.1865;
+}
+
+.etiqueta[for="precio"] {
+    width: 111px;
+    height: 25px;
+    position: absolute; /* o relative, fixed, sticky */
+    top: 698px;
+    left: 194px;
+ }
+
+
+#precio-sa{
+    width: 343px;
+    height: 33px;
+    position:absolute;
+    top:727px;
+    left:193px;
+    border:1px;
+    border-radius: 3px;
+    border:1px solid #4c8deb;
+    opacity: 0.1865;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Tablets y laptops medianos (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #contenedor-sa {
+        width: 100%;
+        height: auto;
+    }
+
+    #divInferiorDerecho-sa {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-rows: auto; /* Ajustar altura automáticamente */
+        gap: 20px;
+    }
+
+    #divInferiorDerecho-sa > div {
+        width: 90%; /* Ajustar ancho para pantallas pequeñas */
+        height: auto; /* Mantener proporciones */
+    }
+}
+
+/* Smartphones (< 768px) */
+@media (max-width: 768px) {
+    #divLateralIzquierdo-sa {
+        display: none; /* Ocultar el lateral izquierdo en pantallas pequeñas */
+    }
+
+    #divInferiorDerecho-sa {
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+
+
+
+.tresEngranajes-sa{
+    position:absolute;
+    top:144px;
+    left:898px;
+    width: 400px;
+    height: 400px;
+    background-color: #D06565;
+
+}
+
+.engranaje-sa {
+    width: 100%; /* Ajusta el tamaño según lo necesites */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Asegura que se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}

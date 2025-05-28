@@ -1,0 +1,6 @@
+
+section[name="new-product"] > section[name="send-product"] {
+    color: aqua;
+    border: 1px solid;
+    width: 500px;
+}

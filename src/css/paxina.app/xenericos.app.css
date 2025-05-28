@@ -1,0 +1,27 @@
+/*   XENÉRICOS */
+aside[name="menu-lateral"]{
+    background: linear-gradient(#4C8DEB,#4C60EB);
+    background: linear-gradient(#4C8DEB, #4C60EB);
+    width: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    li{
+        list-style: none;
+    }
+        a{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+span[name="texto-paxina-titulo"]{
+    margin-left: 20px;
+}

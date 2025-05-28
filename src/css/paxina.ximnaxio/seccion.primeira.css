@@ -1,0 +1,59 @@
+.div-traballo-seccion1-esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  margin-left: 75px;
+  margin-top: 105px;
+}
+.div-pai {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.cor-enfasis-letra {
+  color: var(--estilo-cor-letra-enfasis);
+}
+.cor-normal {
+  color: white;
+}
+.tamanho-letra {
+  font-size: var(--estilo-letra-grande);
+}
+
+.tipo-letra {
+  font-family: var(--estilo-tipo-letra-sistema);
+  font-weight: var(--estilo-weight-tipo-letra);
+}
+.letra-contido {
+  color: white;
+  font-family: var(--estilo-tipo-letra-segoe);
+  font-size: var(--estilo-letra-normal);
+}
+.div-de-traballo {
+  display: flex;
+  gap: 20px;
+  /* background-color: black; */
+}
+
+.div-fillos {
+  /* background-color: black; */
+  border-right: 1px solid #e2e2e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.letra-importante-cor-vermello {
+  color: var(--estilo-cor-letra-enfasis);
+  font-size: var(--estilo-importante-size-font);
+  font-family: var(--estilo-tipo-letra-segoe);
+}
+
+.letra-span-cor-branco {
+  color: white;
+  font-family: var(--estilo-tipo-letra-sistema);
+}
+.separacion-span {
+  margin-right: 20px;
+}

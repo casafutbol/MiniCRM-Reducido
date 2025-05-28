@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  @media (min-width: 769px) {
+    /* Estilos generales */
+    body[angel="mi-proyecto"] {
+        display: flex;
+    }
+
+    aside[angel="menu-lateral"] {
+        background-color: #4b8ce7;
+    }
+
+    [angel="container-aside"] {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+    [angel="boton-aside"] {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #4b8ce7;
+        display: flex;
+        border-radius: 20px;
+        border-color: transparent;
+    }
+
+    [angel="boton-aside"]:hover {
+        background-color: rgb(15, 15, 163);
+        color: white;
+    }
+
+    [angel="img-aside"] {
+        height: 50px;
+        width: 50px;
+    }
+
+    main[angel="contenido-principal"] {
+        width: 95%;
+        height: 100vh;
+        background-color: #f4f0f0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header[angel="encabezado"] {
+        height: 8%;
+        background-color: #ffffff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 5px;
+    }
+
+    [angel="div-header"] {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    [angel="img-header"] {
+        max-width: 100px;
+    }
+
+    [angel="sections"] {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    [angel="section-izda"] {
+        background-color: white;
+        padding: 10px;
+        height: 75%;
+        margin-top: 5%;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    }
+
+    [angel="titulo-superior"] {
+        font-size: 20px;
+    }
+
+    [angel="div-superior"] {
+        display: flex;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    [angel="img-container"] {
+        margin-top: 20px;
+    }
+
+    [angel="botones-perfil"] {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    [angel="boton-change"] {
+        margin-top: 30px;
+        width: 150px;
+        border: 1px solid rgb(15, 15, 163);
+        border-radius: 5px;
+        background-color: #4b8ce7;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    [angel="boton-change"]:hover {
+        background-color: rgb(15, 15, 163);
+    }
+
+    [angel="boton-delete"] {
+        width: 150px;
+        border: 1px solid #8b8989;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    [angel="boton-delete"]:hover {
+        background-color: rgb(15, 15, 163);
+        color: white;
+    }
+
+    [angel="contenedor-superior"] {
+        display: flex;
+        gap: 15px;
+    }
+
+    [angel="label-nombre"], 
+    [angel="label-apellido"] {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    [angel="contenedor-inferior"] {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    [angel="section-dcha"] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: 75%;
+        margin-top: 4%;
+        gap: 80px;
+    }
+
+    [angel="img-container-dcha"] {
+        background-color: white;
+        padding: 30px;
+    }
+
+    [angel="boton-container"] [angel="boton-send"] {
+        background-color: #4b8ce7;
+        color: white;
+        width: 200px;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        align-items: center;
+        font-weight: bold;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    [angel="boton-container"] [angel="boton-send"]:hover {
+        background-color: rgb(15, 15, 163);
+    }
+}
